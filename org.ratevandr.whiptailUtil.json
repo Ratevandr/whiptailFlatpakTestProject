@@ -19,7 +19,84 @@
                     "sha256": "e728ed296fe9f069a0e005003c3d6b2dde3d9cad453422a10d6558616d304cc8"
                 }
             ]
-        },        
+        },  
+                      {
+            "name": "libnewt-dev",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://deb.debian.org/debian/pool/main/n/newt/newt_0.52.21.orig.tar.xz",
+                    "sha256": "1099418091a7f66b7164c9d2960e233619af5a299d6fdd91a4f58534a9773d13"
+                }
+            ]
+        },
+              {
+            "name": "libncurses",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.2+20201114.orig.tar.gz",
+                    "sha256": "aa3f8cfaff2a2b78f184274ec43d9da910c864e4b4d80fc47b5b48cba9154cd2"
+                }
+            ]
+        },
+                      {
+            "name": "libonig",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.6.orig.tar.gz",
+                    "sha256": "aec9f6902ad8b7bb53b2c55d04686ea75da89a06694836b0362cb206578dfe89"
+                }
+            ]
+        },
+                              {
+            "name": "libpng",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz",
+                    "sha256": "ca74a0dace179a8422187671aee97dd3892b53e168627145271cad5b5ac81307"
+                }
+            ]
+        },
+                                      {
+            "name": "zlib",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz",
+                    "sha256": "80c481411a4fe8463aeb8270149a0e80bb9eaf7da44132b6e16f2b5af01bc899"
+                }
+            ]
+        },
+        {
+            "name": "pcre2",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/PhilipHazel/pcre2.git",
+                    "branch": "master"
+                }
+            ]
+        },
+        {
+            "name": "libslang2",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure --prefix=/app/ ",
+                "make -j1",
+                "make install"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.jedsoft.org/snapshots/slang-pre2.3.3-59.tar.gz",
+                    "sha256": "4f6b63cbc12e90373a8f841c72adc2a333542ca4e77bfe1800075a75952890f1"
+                }
+            ]
+        },
+
         {
             "name": "whiptail",
             "sources": [
@@ -30,7 +107,6 @@
                 }
             ]
         },
-        ,        
         {
             "name": "dialog",
             "sources": [
@@ -41,7 +117,7 @@
                 }
             ]
         },
-                {
+        {
             "name": "simpleApp",
             "buildsystem": "simple",
             "build-commands": [
@@ -54,7 +130,7 @@
                     "branch": "master"
                 }
             ]
-        },
+        }
         
     ]
 }
