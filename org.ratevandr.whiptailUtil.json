@@ -50,7 +50,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "???",
+                    "url": "https://github.com/Ratevandr/whiptailFlatpakTestProject.git",
                     "branch": "master"
                 }
             ]
