@@ -1,0 +1,60 @@
+{
+    "app-id": "org.ratevandr.whiptailUtil",
+    "command": "run-tui.sh",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "41",
+    "sdk": "org.gnome.Sdk",
+    "finish-args": [
+        "--allow=devel",
+        "--filesystem=/tmp"
+    ],
+    "modules": [
+       
+        {
+            "name": "libpopt-dev",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://deb.debian.org/debian/pool/main/p/popt/popt_1.16.orig.tar.gz",
+                    "sha256": "e728ed296fe9f069a0e005003c3d6b2dde3d9cad453422a10d6558616d304cc8"
+                }
+            ]
+        },        
+        {
+            "name": "whiptail",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://pagure.io/newt/archive/r0-52-21/newt-r0-52-21.tar.gz",
+                    "sha256": "a9cb970ee889d5f710cf4fdacc684be1bd3777f03f59138784468be45c14f62a"
+                }
+            ]
+        },
+        ,        
+        {
+            "name": "dialog",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://deb.debian.org/debian/pool/main/d/dialog/dialog_1.3-20201126.orig.tar.gz",
+                    "sha256": "c9233a6c8ea33a59e2378e5146ae2bd13b519744cfdb647af7420adac5ad3866"
+                }
+            ]
+        },
+                {
+            "name": "simpleApp",
+            "buildsystem": "simple",
+            "build-commands": [
+                "cp run-tui.sh /app/bin/"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "???",
+                    "branch": "master"
+                }
+            ]
+        },
+        
+    ]
+}
