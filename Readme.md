@@ -4,3 +4,5 @@
 
 `flatpak run org.ratevandr.whiptaulUtil --dialog` for check dialog
 `flatpak run org.ratevandr.whiptaulUtil --whiptaul` for check whiptail
+
+flatpak with correct dialog build commands
